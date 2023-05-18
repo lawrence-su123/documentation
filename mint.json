@@ -13,7 +13,7 @@
   },
   "topbarLinks": [
     {
-      "name": "Documentation",
+      "name": "Hardware FYI Pro",
       "url": "https://mintlify.com/docs"
     }
   ],
@@ -23,12 +23,12 @@
   },
   "anchors": [
     {
-      "name": "API Reference",
+      "name": "Hardware FYI Cheatsheets",
       "icon": "rectangle-terminal",
       "url": "api-reference"
     },
     {
-      "name": "Changelog",
+      "name": "Hardware Company Database",
       "icon": "list",
       "url": "https://mintlify.com"
     },
@@ -40,8 +40,38 @@
   ],
   "navigation": [
     {
-      "group": "Home",
-      "pages": ["introduction", "features"]
+      "group": "Welcome",
+      "pages": ["introduction", "features", "quickstart Guide"]
+    },
+    {
+      "group": "Finding Companies & Landing Interviews",
+      "pages": ["The Daily Routine", "Defining your Dream Role", "Where to Find Opportunities", "Cold Emailing Guide"]
+    },
+    {
+        "group": "Cracking the ME Technical Interview",
+        "pages": [
+            "quickstart",
+            {
+                "group": "Nested Reference Pages",
+                "pages": ["nested-reference-page"]
+            }
+        ]
+    },
+    {
+        "group": "Mechanical Engineering Fundamentals",
+        "pages": [
+            "quickstart",
+            {
+                "group": "Nested Reference Pages",
+                "pages": ["nested-reference-page"]
+            }
+        ]
+    },
+    {
+      "group": "Hardware Cheatsheets",
+      "pages": [
+        "Cheatsheet Quickstart Guide"
+      ]
     },
     {
       "group": "API Documentation",
