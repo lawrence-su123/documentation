@@ -1,0 +1,38 @@
+
+## Example Resumes
+
+Here are some example resumes we’ve seen over the years to act as starting points & inspiration for how you want to structure your resume:
+
+<CardGroup cols={2}>
+  <Card title="Resume #1" icon="square-1" color="#ea5a0c">
+    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+  </Card>
+  <Card title="Resume #2" icon="square-2" color="#0285c7">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </Card>
+  <Card title="Resume #3" icon="square-3" color="#16a34a">
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  </Card>
+  <Card title="Resume #4" icon="square-4" color="#dc2626">
+    Excepteur sint occaecat cupidatat non proident
+  </Card>
+</CardGroup>
+
+## Resume Progression vs. Time
+
+Talk about how resumes progress over time, it should be treated as a living, breathing document (look at hardwareishard.net post)
+
+<CardGroup cols={2}>
+  <Card title="Resume #1" icon="square-1" color="#ea5a0c">
+    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+  </Card>
+  <Card title="Resume #2" icon="square-2" color="#0285c7">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </Card>
+  <Card title="Resume #3" icon="square-3" color="#16a34a">
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  </Card>
+  <Card title="Resume #4" icon="square-4" color="#dc2626">
+    Excepteur sint occaecat cupidatat non proident
+  </Card>
+</CardGroup>

@@ -48,22 +48,41 @@
       "pages": ["The Daily Routine", "Defining your Dream Role", "Where to Find Opportunities", "Cold Emailing Guide"]
     },
     {
+      "group": "Position Yourself for Success",
+      "pages": ["Resume Writing 101", "Design Portfolios", "Personal Projects", "Project Oriented Coursework", "Engineering Clubs"]
+    },
+    {
         "group": "Cracking the ME Technical Interview",
         "pages": [
             "quickstart",
             {
                 "group": "Nested Reference Pages",
                 "pages": ["nested-reference-page"]
-            }
+            },
+           {
+                "group": "Mock Interviews",
+                "pages": ["Critical dimensions & tolerance stack problems", "General manufacturing problems"]
+           },
+           {
+                "group": "ME Technical Interviewing 101",
+                "pages": ["Critical dimensions & tolerance stack problems", "General manufacturing problems"]
+           }
         ]
     },
     {
         "group": "Mechanical Engineering Fundamentals",
         "pages": [
-            "quickstart",
             {
-                "group": "Nested Reference Pages",
-                "pages": ["nested-reference-page"]
+                "group": "Materials",
+                "pages": ["Plastics", "Metals", "Rubber/Elastomers"]
+            },
+            {
+                "group": "Consumer Product Design",
+                "pages": ["Injection Molding Guide", "Advanced Injection Molding"," Injection Molding Part Defects", "CNC Machining Guide", "Die-Casting", "Compression Molding Guide", "Die-Cutting Guide", "GD&T and Tolerance Guide","Color, Material, Finish (CMF)", "3-D Printing Methods"]
+            },
+            {
+                "group": "Reliability & Test",
+                "pages": ["Reliability", "Failure Analysis", "Plastic Composition & Aging", "Mechanical Testing"]
             }
         ]
     },
@@ -92,6 +111,6 @@
     "github": "https://github.com/mintlify",
     "linkedin": "https://www.linkedin.com/company/mintsearch"
   },
-  "backgroundImage": "https://i.ibb.co/bHYbYhx/gradient.png"
+  "backgroundImage": "https://i.ibb.co/cDxMYRR/gradient-3.png"
 
 }
