@@ -54,18 +54,14 @@
     {
         "group": "Cracking the ME Technical Interview",
         "pages": [
-            "quickstart",
-            {
-                "group": "Nested Reference Pages",
-                "pages": ["nested-reference-page"]
-            },
+            "Cantilever Beams 101",  "Stress & Strain",  "Moment of Inertia", "Free Body Diagrams",  "Failure Modes", "Thermodynamics",
            {
-                "group": "Mock Interviews",
-                "pages": ["Critical dimensions & tolerance stack problems", "General manufacturing problems"]
+                "group": "Mock Interview Problems",
+                "pages": ["Beam Bending Problems", "Stress & Strain Problems", ",Moment of Inertia Problems","Thermodynamics Problems", "Critical dimensions & tolerance stack problems", "General manufacturing problems"]
            },
            {
-                "group": "ME Technical Interviewing 101",
-                "pages": ["Critical dimensions & tolerance stack problems", "General manufacturing problems"]
+                "group": "Company Interviewing Processes",
+                "pages": ["Apple", "SpaceX", "Tesla", "Start-Ups"]
            }
         ]
     },
@@ -74,7 +70,7 @@
         "pages": [
             {
                 "group": "Materials",
-                "pages": ["Plastics", "Metals", "Rubber/Elastomers"]
+                "pages": ["Plastics", "Metals", "Rubbers & Elastomers"]
             },
             {
                 "group": "Consumer Product Design",
@@ -89,7 +85,7 @@
     {
       "group": "Hardware Cheatsheets",
       "pages": [
-        "Cheatsheet Quickstart Guide"
+        "Cheatsheet Quickstart Guide", "The Ultimate MechE Technical Interviewing Cheatsheet", "Metal Manufacturing Basics", "Plastic Manufacturing Basics", "Reliability Engineering & Consumer Product Testing", "Phases of Consumer Product Development"
       ]
     },
     {
