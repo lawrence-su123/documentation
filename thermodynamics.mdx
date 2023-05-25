@@ -1,0 +1,79 @@
+---
+title: "Thermodynamics"
+description:
+---
+Thermo, in our experience, hasn’t been the most heavily covered topic in interviews. It isn’t a great use of your time to re-learn your entire thermodynamics & heat transfer courses when preparing for an interview (unless you’re interviewing for a thermal engineering position).
+
+That being said, we cover the most common interview topics surrounding Thermo on this page.
+
+### Three laws of thermodynamics
+
+1. **The first law of thermodynamics**, also known as the Law of Conservation of Energy, states that energy cannot be created or destroyed, only transformed from one form to another. This means that the total amount of energy in a closed system remains constant.
+2. **The second law of thermodynamics** states that the entropy of a closed system will tend to increase over time. Entropy is a measure of the disorder or randomness of a system. This law implies that, over time, energy tends to become more and more dispersed, and systems tend to become more disordered.
+3. **The third law of thermodynamics** states that as the temperature of a system approaches absolute zero (the theoretical temperature at which all particles stop moving), the entropy of the system approaches a minimum value. This law has important implications for the behavior of matter at extremely low temperatures.
+
+| Law | Statement | Formula | Formula Variables |
+| --- | --- | --- | --- |
+| First Law | Energy is conserved | ΔU = Q - W | ΔU: change in internal energy of a system
+Q: heat added to or removed from the system W: represents the work done by or on the system |
+| Second Law | Entropy tends to increase | ΔS ≥ Q/T | T: temperature
+ΔS: change in entropy of a system |
+| Third Law | Entropy approaches a minimum at absolute zero | S(T=0) = 0 | S(T=0): entropy of system at absolute 0 |
+
+### Three modes of heat transfer
+
+1. **Conduction** is the transfer of heat through a material without any movement of the material itself. This process occurs when two objects are in contact with each other and at different temperatures. Heat flows from the hotter object to the cooler object until they reach the same temperature. For example, when you touch a hot stove, heat is conducted from the stove to your hand, causing it to feel hot.
+2. **Convection** is the transfer of heat through a fluid (a liquid or a gas) by the movement of the fluid itself. This process occurs when heated fluid rises and cooler fluid sinks in a cycle, creating a convection current. For example, when you boil water on a stove, the heat from the stove causes the water at the bottom of the pot to become hotter and rise, while cooler water at the top sinks to take its place, creating a convection current that heats the entire pot of water.
+3. **Radiation** is the transfer of heat through electromagnetic waves, such as light or infrared radiation. This process occurs without any physical contact between objects. For example, the warmth you feel from the sun or a fire is the result of radiation. Another example is a microwave oven, which heats food by using electromagnetic radiation to excite the water molecules in the food, causing them to heat up and cook the food.
+
+| Mode | Formula | Formula Variables |
+| --- | --- | --- |
+| Conduction | Q = kAΔT/d | Q: Heat transferred
+k: Thermal conductivity
+A: Area
+ΔT: Temperature difference
+d: Distance |
+| Convection | Q = hAΔT | Q: Heat transferred
+h: Convective heat transfer coefficient
+A: Area
+ΔT: Temperature difference |
+| Radiation | Q = εσA(T1^4 - T2^4) | Q: Heat transferred
+ε: Emissivity
+σ: Stefan-Boltzmann constant
+A: Area
+T1: Temperature of hotter object
+T2: Temperature of cooler object |
+
+### Thermal resistance
+
+Thermal resistance is a measure of how difficult it is for heat to flow through a material or a structure. It’s similar to electrical resistance, which measures how difficult it is for current to flow through a material.
+
+The thermal resistance of a material or structure depends on several factors, including its thermal conductivity, thickness, and surface area.
+
+The formula for thermal resistance is:
+
+$$
+R = \Delta T/Q
+$$
+
+Where R is the thermal resistance, ΔT is the temperature difference across the material or structure, and Q is the rate of heat flow through the material or structure. The higher the thermal resistance of a material or structure, the more difficult it is for heat to flow through it.
+
+In order to use the thermal resistance formula in practice, you can solve for Q depending on the heat transfer mode. Thermal resistance can be reduced by using materials with higher thermal conductivity or by increasing the surface area of the material or structure, among other methods.
+
+|  | Formula | Formula Variables |
+| --- | --- | --- |
+| General Formula | R = ΔT/Q | R: Thermal resistance
+ΔT: Temperature difference
+Q: Heat flow rate |
+| Convection Thermal Resistance | R = 1/(hA) | R: Thermal resistance
+h: Convective heat transfer coefficient
+A: Surface area |
+| Conduction Thermal Resistance | R = d/(kA) | R: Thermal resistance
+d: Thickness
+k: Thermal conductivity
+A: Surface area |
+| Radiation Thermal Resistance | R = 1/(εσA) * (1/T2^4 - 1/T1^4) | R: Thermal resistance
+ε: Emissivity
+σ: Stefan-Boltzmann constant
+A: Surface area
+T1: Temperature of hotter object, T2: Temperature of cooler object |

@@ -1,0 +1,20 @@
+---
+title: "Beam Bending Problems"
+description:
+---
+## Question #1: Snap Fit Design, `advanced`
+
+I have a snap fit with a given length L that needs to deflect by a given delta in order to snap into place. How would I pick a plastic for the snap fit?
+![Snap Fit Question](/images/snap_fit_question.png)
+
+
+You can assume the grey part is fully fixed and will not deflect.
+
+### **Solution**
+
+In order to solve this problem, we first identify our known and unknowns. We know how long the snap fit is, and how much it needs to deflect. We do not know the material, and therefore do not know any material properties.
+
+In the beam bending deflection equations, the only material property variable out our disposal is E, the Young’s modulus. This will become our main unknown.
+
+Assuming the snap fit deflects like a cantilever beam with a force P applied at its end, we can use the deflection formula:
+![Snap Fit Equation](/images/snap_fit_equation.png)

@@ -1,0 +1,70 @@
+---
+title: "Failure Modes"
+description:
+---
+
+### Yielding/Ultimate
+
+Yielding is when the stress of a material exceeds the yield stress.
+
+Ultimate failure occurs when stress of a material exceeds ultimate stress.
+
+********************************************Compression vs Tension********************************************
+
+Materials tend to fail at higher stresses in tension when compared to compression. The main reason for this is crack propagation. When materials are pulled apart (tension applied), microscopic cracks and voids form, and these cracks grow which ultimately leads to fracture. In compression, the cracks are supported by adjacent material which helps distribute load and prevent failure.
+
+**Ductile and brittle failure**
+
+Ductile materials will neck prior to failing in tension. Note that
+
+Brittle materials crack without much necking at all when failing in tension.
+![Brittle vs Ductile Failure Mode](/images/brittle_ductile.png)
+
+Note that, brittle materials are much more likely to fail in tension than in shear. This is due to the fact that brittle materials have a low resistance to crack propagation and fracture. When subjected to a tensile load, the material experiences tensile stresses that cause the material to elongate, creating internal cracks that can propagate quickly through the material. Once a crack has formed, it can easily continue to propagate through the material, leading to fracture. In contrast, ductile materials are weaker in shear due to plastic slipping of the shear planes.
+
+This is why, when applying a torsional load to a brittle and ductile beam, the brittle beam fails at 45 degrees, which is the max tension plane. The ductile material fails at 0 degrees, which is the max shear plane. This is due to the concept of Mohr’s circle and max shear & tensile stresses in a cross section.
+
+![Brittle vs Ductile Torsional Failure Mode](/images/brittle_ductile_twist.png)
+### Buckling
+
+A specific mode of failure that occurs with long slender members.
+
+When compressing a long, slender member, the member will begin to bend sideways and ultimately fail due to the bending stress within the beam’s narrow cross section. This is because, as mentioned above, compression failure typically occurs at much higher stress than tensile failure.
+![Buckling](/images/buckling.png)
+### Impact
+
+Impact is force applied to an object over a small time (e.g. punching a bag). Impact force times this time delta is equal to the change on momentum of an object.
+
+$$
+F_{impact}\Delta t = m \Delta v
+$$
+
+Because impact is characterized by time, it is unpredictable and hard to model.
+
+An object’s resistance to impact can be measured by its [toughness](https://www.notion.so/Stress-Strain-183d9aa8c3fc418395ded14cd1ca04f4). The tougher an object is, the less likely it is to fail due to impact.
+
+### Cyclic/Fatigue
+
+Fatigue is a result of cyclic stress, which can be characterized by a mean stress and a stress amplitude. Fatigue failure occurs at stresses well below a material’s ultimate stress.
+
+![Cyclic](/images/cyclic.png)
+
+Fatigue failure happens in 3 stages:
+
+1. Crack formation
+2. Crack propagation
+3. Fracture
+
+Crack propagation is the key ingredient to fatigue. As a crack grows, more and more of the material fails, which leads to a lower and lower cross sectional area. Therefore, even if the cyclic loading force remains constant, the area results in higher stresses in the material which ultimately leads to fracture over enough cycles.
+
+Fatigue can be characterized by a S-N (Stress versus number of cycles) curve. The S-N curve tells you the number of cycles it takes
+
+![S-N Curve](/images/s_n_curve.png)
+
+For ferrous materials, there is an endurance limit. Under the endurance limit, a material can be cycled to an unlimited number of cycles.
+
+### Creep
+
+Failure that occurs due to prolonged loading. When a material is subjected to a constant load, the stress on the material causes it to deform. At first, the deformation is elastic, meaning that it is reversible and the material returns to its original shape when the load is removed. However, as the load is sustained over time, the material may begin to undergo plastic deformation, which is permanent and irreversible. The material may also experience micro-structural changes, such as grain growth or void formation, that weaken its mechanical properties.
+
+Creep is dependent on temperature. Typically, materials have a longer time until failure at lower temperatures.
