@@ -1,0 +1,81 @@
+---
+title: "Injection Molding 101"
+description:
+---
+
+![Injection Molding, Animated](/images/animated_injection_molding.gif)
+
+## What is injection molding?
+
+Injection molding is a widely-used manufacturing process that entails the injection of molten materials into a **mold cavity**. This process typically involves melting thermoplastic granules into molten plastic, which is then injected into a custom-made mold that conforms to the desired specifications of the final product.
+
+The mold is then clamped shut and the molten material is injected into it at high pressure through a small opening known as a gate. The material fills the mold cavity and is then allowed to cool and solidify, after which the mold is opened and the final product is ejected.
+
+Injection molding is a highly efficient process that can produce parts with complex shapes and high precision. It is commonly used in various industries, including automotive, aerospace, medical devices, consumer goods, and electronics, to produce large quantities of identical parts with consistent quality and minimal waste.
+
+![Injection Molding, Anatomy](/images/injection_molding_anatomy.png)
+
+### Terminology to know
+
+**Refer to the image above for most of these terms**
+
+1. **Gate** - the point where the molten plastic enters the mold
+2. **Runner** - the channel that connects the gate to the part cavity
+3. **************Cavity************** - the hollowed out negative space of the mold that defines your part geometry
+4. ********************************A side of mold******************************** - the cosmetic side of your mold, where the tolerances and surface finish requirements are significantly tighter (A side has the gates, fixed
+5. **B side of mold** - the non-cosmetic side of a mold, in consumer parts this will typically contain functional features such as bosses for fasteners and ribs for structural rigidity
+
+![Injection Molding, Core & Cavity](/images/injection_molding_ab.png)
+
+6. **Parting line** - the line where the two halves of the mold meet
+7. **Ejector pins** - used to remove the part from the mold
+8. **Draft angle** - the angle added to the side of the part to allow it to be easily ejected from the mold
+9. **Flash** - excess plastic that extends beyond the parting line
+10. **Cycle time** - the time required to complete one injection molding cycle. Typical cycle times are anywhere from *2 seconds to 2 minutes*, which is what makes injection molding so conducive to MP (mass production)
+11. **Warpage** - deformation of the part due to uneven cooling or other factors.
+
+![Injection Molding, Defects](/images/injection_molding_defects.png)
+
+## Design for manufacturing
+
+When designing an injection molded part, it’s important to understand several basic design for manufacturing guidelines to minimize tooling complexity & maximize part yield (and decrease your part cost as a result).
+
+1. Wall thickness: maintain uniform wall thicknesses as much as possible to avoid sink marks and warpage issues. A wall thickness of 1-4mm is ideal for injection molding.
+2. Draft angles: add draft angles to the vertical surfaces of a part to help facilitate easy ejection from the mold. A minimum draft angle of 1 degree is recommended.
+3. Corner radii: round sharp corners and edges to minimize stress concentrations, reduce the likelihood of cracking, and facilitate mold-ability.
+
+![Injection Molding, DFM](/images/injection_molding_dfm.png)
+
+4. Parting lines: keep parting lines simple and avoid sharp edges, which can lead to flashing issues. Place parting lines in inconspicuous areas and avoid designing the part in such a way that the parting line interferes with the critical functional areas.
+5. Undercuts: avoid designing undercuts that will require complex mold actions, which can lead to higher tooling costs.
+
+![Injection Molding, Undercuts](/images/undercuts.png)
+
+
+> 🔦 Understanding Undercuts:
+>
+> “*Imagine holding a flashlight to your part design, everything the light touches would glow and the rest would be in shadow. Now imagine having another flashlight shining exactly on the opposite side of the part. Features like holes on the side may still have areas in a shadow, this would be an undercut.”*
+>
+> ![Undercut Analysis](/images/undercut_analysis.png)
+
+6. [Surface finish](https://xometry.eu/en/injection-moulding-surface-finishes-spi-and-vdi/): select an appropriate surface finish to suit the application and reduce the likelihood of part rejection. This could range from matte to high-gloss finishes!
+
+<Note>
+🏁 Industry Terminology for Surface Finish Grades:
+
+- VDI: Different grades of surface roughness standards set by Verein Deutscher Ingenieure (VDI), the Society of German Engineers. Range from VDI-4 (low polish) to VDI-45 (highest roughness).
+- SPI: Different grades of polished finishes established by the Society of Plastics Industry (SPI). Range from A-1 (high polish) to D-3 (dull finish)
+</Note>
+
+<Frame caption="SPI Finish Grades (Polish)">
+![SPI finish](/images/spi.gif)
+</Frame>
+
+<Frame caption="VDI Finish Grades (Surface Roughness)">
+![VDI finish](/images/vdi.gif)
+</Frame>
+
+7. Bosses: use bosses to create fastening points for other parts to attach onto your injection molded part.
+8. Ribs: use ribs to reinforce a part while maintaining its thickness. Ribs should be 0.5-0.75 of the thickness of the wall and should not exceed 60% of the nominal wall thickness.
+
+![Injection Molding, Boss & Ribs](/images/injection_molding_bossribs.png)

@@ -74,7 +74,7 @@
             },
             {
                 "group": "Consumer Product Design",
-                "pages": ["Injection Molding Guide", "Advanced Injection Molding"," Injection Molding Part Defects", "CNC Machining Guide", "Die-Casting", "Compression Molding Guide", "Die-Cutting Guide", "GD&T and Tolerance Guide","Color, Material, Finish (CMF)", "3-D Printing Methods"]
+                "pages": ["Injection Molding Guide", "Advanced Injection Molding","Injection Molding Part Defects", "CNC Machining Guide", "Die-Casting", "Compression Molding Guide", "Die-Cutting Guide", "GD&T and Tolerance Guide","Color, Material, Finish (CMF)", "3-D Printing Methods"]
             },
             {
                 "group": "Reliability & Test",
