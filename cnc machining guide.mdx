@@ -1,0 +1,48 @@
+---
+title: "CNC Machining Guide"
+description:
+---
+
+### What is a CNC?
+CNC machining stands for Computer Numerical Control machining. It is a manufacturing process that involves using computer-controlled machines to produce parts and components from a variety of materials, such as metal, plastic, and wood.
+
+CNCs are programmed to execute the necessary cutting, drilling, and shaping operations to create the part. The machines used in CNC machining are highly precise and can produce parts with very tight tolerances, making it a great option for creating complex parts with intricate geometries.
+
+### How does it work?
+
+![CNC Anatomy](/images/cnc/anatomy.png)
+
+The **spindle** is a rotating shaft that holds the cutting tool and rotates it at high speeds.
+
+The **cutting tool** is the tool that removes material from the workpiece. It is typically held in a spindle and can be of different types, such as end mills, drills, taps, or t-cutters. The cutting tool can be made from different materials and can have various geometries to suit different machining operations.
+
+The **part** is the workpiece that is being machined. The part is held in place on the CNC machine bed during machining.
+
+**Linear rails** are guide rails that provide support and guidance for the movement of the cutting tool and spindle. They are typically made from hardened steel and are designed to be precise and smooth to ensure accurate machining.
+
+The **bed** is the flat surface on which the part is placed during machining. The bed is typically made from cast iron or steel and is designed to be stable and rigid to ensure accurate and precise machining.
+
+### Design for manufacturing guidelines
+
+1. Internal radii: ensure cavities of your part have internal radii (necessary due to tool radii). Make sure to size your internal radii relative to cavity depth: the deeper your cavity, the larger the radii needs to be (or else your tool will vibrate excessively).
+2. Thin walls: try to avoid when possible because thin walls bend easier and cannot be accurately cut as a result.
+3. Undercuts & tool access: Ensure that the design provides sufficient tool access for the CNC machine to produce the part. Avoid designs that require complex fixturing or specialized tooling.
+4. Minimize number of setups: reduces cost
+
+### Designing for lower cost
+
+**When to use a CNC**
+
+1. Prototyping: CNC machining is an excellent method for producing small quantities of parts for prototyping and testing. It allows designers and engineers to quickly and accurately create prototypes to test fit, form, and function before moving on to larger production runs.
+2. Production runs: CNC machining is also well-suited for producing large quantities of parts with consistent quality and precision. It is an efficient way to produce parts for a wide range of industries, including aerospace, automotive, medical, and electronics. However, CNC machining does have long cycle time, which can add significant cost to the process.
+![CNC DFM](/images/cnc/dfm.png)
+
+3. Customization: CNC machining can be used to produce highly customized parts to meet specific design requirements. It is an excellent way to produce parts with unique geometries, features, and finishes.
+4. Complex geometries: CNC machining is capable of producing parts with complex geometries that may be difficult or impossible to produce with other manufacturing methods. It allows designers and engineers to push the boundaries of what is possible in terms of part design and functionality.
+![CNC Set-Up](/images/cnc/setup.png)
+
+**When to not use a CNC**
+
+1. Simple geometries: If the part you need to produce has a simple geometry, such as a flat plate or a cylinder, CNC machining may be overkill, whether you are prototyping or designing for mass production. Other methods such as stamping or casting may be more efficient and cost-effective.
+2. Large parts: CNC machines typically have size limitations, so if you need to produce large parts, you may need to consider other methods such as welding or fabrication.
+3. Soft materials: CNC machining is most effective on hard materials such as metals and plastics. Soft materials such as rubber or foam may not be suitable for CNC machining, as they may deform or tear during the cutting process.

@@ -1,0 +1,91 @@
+---
+title: "3-D Printing Methods"
+description:
+---
+<Frame>
+<img src="/images/3d_printing/fdm_art.gif" alt="example image" width="200" height="150" />
+</Frame>
+
+<Note>
+Once you enter the rabbit hole of 3-D printing, you’ll discover the endless possibilities of what you create! Whatever you can imagine in CAD, you can make with the magic of 3-D printing.
+</Note>
+
+3-D printing is an additive manufacturing process, where a part is made by adding material, in which layers of material are successively formed to create a physical object. After creating the CAD part, 3-D printing software will translate it into software that can transcribe a complex set of 3-D data.
+
+Imagine you have a regular printer that can only print on a 2D plane. It prints line by line, creating an image or document on a flat piece of paper. Now, imagine if that printer could print layer by layer, building up a 3D object instead of just a 2D image. That's essentially what 3D printing is - a process of creating a physical object by layering material on top of itself, guided by a digital design file.
+
+<Tip>
+🖨️ 3-D printing is not constrained to any of the DFM criteria that most, traditional manufacturing methods follow (i.e. castings, plastic molding). As long as your print bed is large enough, you can print virtually anything!
+</Tip>
+
+Cool 3-D Printed parts:
+
+<Frame>
+![Example Printed parts](/images/3d_printing/print_examples.png)
+</Frame>
+
+## History of 3-D Printing
+
+The first documented iterations of 3-D printing originates from Japan in the 1980’s. At the time however, the technology was cost-prohibitive and limited to industrial applications. It wasn't until the development of lower-cost desktop 3D printers and the open-source RepRap project in the late 2000s that 3D printing started to become more accessible and widely used.
+
+In the last 20 years , 3-D printing has reached a level of quality and price that has become accessible to almost anyone interested. Hobbyist 3-D printers can be found for less that $200 for entry-level machines (typically FDM printers).
+
+What’s quite crazy to believe, in the past 10 years there are companies worth more than $1.5 billion+ with advances they’re making in 3-D printing for novel applications:
+
+### Relatively Space:
+
+Aerospace 3-D printing company, which specializes in printing entire rockets in one go, reducing the number of parts and improving the overall performance. They also use a variety of high-performance materials, including their own custom alloy, to create rockets that are lighter, stronger, and more efficient than traditional rockets.
+
+### Carbon3D:
+
+Company that developed a proprietary 3-D printing process called Digital Light Synthesis (DLS). This process uses a liquid resin that is cured by light to produce parts that are strong, flexible, and incredibly detailed. Carbon3D's printers are used in a variety of industries, including automotive, healthcare, and consumer products.
+
+## *Fused Deposition Modeling* (FDM)
+
+When you think of 3-D printing in popular media, this is the specific method you’ll typically be conjuring up! Fused deposition modeling is a specific type of 3D printing that works by heating up a thermoplastic filament (a long, thin strand of plastic) until it melts and becomes pliable. The melted plastic is then extruded through a nozzle, layer by layer, to create a 3D object. The nozzle moves in different directions according to the design file, depositing the plastic in precise locations to build up the object. The plastic used in FDM filaments are generally ABS (Acrylonitrile Butadiene Styrene), PLA (Polyactic Acid) and Nylon (Polyamide), but other exotic varieties of materials can also be used, like a material blend of plastic and wood or carbon.
+
+One of the benefits of FDM is that it is relatively easy and affordable to use, which has contributed to its popularity among hobbyists and small businesses. However, it does have some limitations. For example, the finished product may have visible lines or other imperfections where the layers meet, which can affect the overall quality of the print. Overall, FDM prints are best used basic proof-of-concept modeling and simple prototyping.
+
+<Frame>
+![Example Printed parts](/images/3d_printing/fdm.gif)
+</Frame>
+
+## ***Stereolithography*** (***SLA***) 3D printing
+
+Like other forms of 3D printing, SLA involves creating a physical object from a digital design file by layering material on top of itself. However, instead of using melted plastic, SLA uses thermoset, liquid resin that is cured (hardened) by a laser or other light source. SLA printing takes advantage of photosensitive liquid resins, that when exposed to UV light via a directed laser, can selectively cure and harden specific regions to form the desired shape.
+
+<Frame>
+![SLA Diagram](/images/3d_printing/sla_parts.png)
+</Frame>
+
+Here's how it works: the liquid resin is contained in a tank, and a build platform is lowered into the resin. The laser then shines on the resin, hardening it in precise locations according to the design file. The build platform is then raised slightly, and the process repeats, with the laser hardening the resin layer by layer until the object is complete.
+
+![SLA Diagram](/images/3d_printing/sla.gif)
+
+One of the biggest advantages of SLA printing is its ability to produce parts with very high resolution and smooth surface finishes. This makes it a great choice for creating detailed prototypes, jewelry, and other objects that require intricate details.
+
+However, there are some limitations to SLA as well. The liquid resin can be expensive, curing process can be time-consuming, and the printers are generally more difficult to operate than traditional FDM printers. Parts made from SLA prints  should not be used for structural prototypes, as the print material can be remarkably brittle.
+
+## **[Selective Laser Sintering (SLS)](https://www.3dsystems.com/selective-laser-sintering)**
+
+SLS printing is a process in which a powdered material, typically nylon or polyamide, is melted by a high-powered laser to fuse layers together, creating a final 3-D object. The process is known as "selective" because the laser only melts the powder in the areas where the object is being built, layer by layer.
+
+As described by Formlabs in their [overview](https://formlabs.com/blog/what-is-selective-laser-sintering/):
+
+> 🖨️ The powder is dispersed in a thin layer on top of a platform inside of the build chamber. The printer preheats the powder to a temperature somewhat below the melting point of the raw material, which makes it easier for the laser to raise the temperature of specific regions of the powder bed as it traces the model to solidify a part. The laser scans a cross-section of the 3D model, heating the powder to just below or right at the melting point of the material. This fuses the particles together mechanically to create one solid part. The unfused powder supports the part during printing and eliminates the need for dedicated support structures. The platform then lowers by one layer into the build chamber, typically between 50 to 200 microns, and the process repeats for each layer until parts are complete.
+
+![SLS Diagram](/images/3d_printing/sls.gif)
+
+One of the great advantages of SLS printing is that it can create parts with excellent strength and durability, making it a popular choice for creating functional prototypes and end-use parts. In fact, SLS parts can often be used in place of injection-molded parts, as they have similar mechanical properties.
+
+Another advantage of SLS printing is that it can produce parts with a high level of detail and complexity, including internal features and intricate geometries. This makes it a great choice for creating parts with unique shapes and designs. SLS printing is also a versatile process, as it can be used with a variety of materials, including plastics, metals, and even ceramics.
+
+## Other 3-D Printing Methods
+
+These methods are less commonly known, but very helpful for prototyping purposes.
+
+**Multi-Jet Fusion (MJF):** Very similar to SLS printing
+
+- SLS uses lasers to melt the material together, whereas MJF uses a fusing agent with added heat to create the solid parts. SLS has more waste, but MJF has added cost with the fusing agents.
+
+**Polyjet 3-D Printing:** Able to incorporate the widest variety of colors and materials into a single model, and print exotic materials like rubber-like elastomers.

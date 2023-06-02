@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Documentation Starter Kit",
+  "name": "Hardware FYI Pro",
   "logo": {
     "dark": "/logo/dark.png",
     "light": "/logo/light.png"
@@ -23,6 +23,11 @@
   },
   "anchors": [
     {
+      "name": "Hardware FYI Base",
+      "icon": "discord",
+      "url": "https://hardwareinterviews.fyi"
+    },
+    {
       "name": "Hardware FYI Cheatsheets",
       "icon": "rectangle-terminal",
       "url": "api-reference"
@@ -31,13 +36,13 @@
       "name": "Hardware Company Database",
       "icon": "list",
       "url": "https://mintlify.com"
-    },
-    {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://mintlify.com/community"
     }
   ],
+  "topAnchor": {
+    "name": "Hardware FYI Pro",
+    "icon": "book-open",
+    "iconType": "duotone"
+  },
   "navigation": [
     {
       "group": "Welcome",
@@ -74,7 +79,7 @@
             },
             {
                 "group": "Consumer Product Design",
-                "pages": ["Injection Molding Guide", "Advanced Injection Molding","Injection Molding Part Defects", "CNC Machining Guide", "Die-Casting", "Compression Molding Guide", "Die-Cutting Guide", "GD&T and Tolerance Guide","Color, Material, Finish (CMF)", "3-D Printing Methods"]
+                "pages": ["Injection Molding Guide", "Advanced Injection Molding","Injection Molding Part Defects", "CNC Machining Guide", "Die-Casting", "Compression Molding Guide", "Die Cutting Guide", "GD&T and Tolerance Guide","Color, Material, Finish (CMF)", "3D Printing Methods"]
             },
             {
                 "group": "Reliability & Test",

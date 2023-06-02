@@ -1,0 +1,69 @@
+---
+title: "Advanced Injection Molding"
+description: Part Design & Mold Flow Analysis
+---
+
+## How do you go from CAD to manufacturing physical parts?
+
+It’s one thing to design parts in CAD, but an entirely separate beast to manufacture and produce these parts in the real world! Parts can’t be designed just in a sandbox, as parts are made on physical tooling. A
+
+In the world where you’ve correctly designed your plastic part to meet the standard design for manufacturing (DFM) criteria, there’s a lot of background work done by the plastic molding vendor to perform secondary tooling simulations/analysis and start cutting steel to fabricate the core/cavity blocks needed to mold the part.
+
+<Note>
+🚃 Hold onto your seats, we’re about to take you through what it takes to go from CAD to getting actual, physical parts!
+</Note>
+
+## Mold Flow Analysis:
+Any injection molded part requires custom tooling in the form of the core/cavity blocks (i.e. the blocks of steel that form the shape of the manufactured part). Before you start manufacturing these blocks of steel, mold flows are conducted to examine how the resin will flow through the mold.
+
+This specific type of analysis allows you to understand how the plastic behaves while being molded, and to adjust tool design as needed. The process of mold flow analysis can **uncover design issues, save resources, provide for preemptive correction, and speed up overall cycle time** for tooling design!
+
+![Mold Flow, Animated](/images/advanced_im/mold_flow_visualized.gif)
+![Mold Flow 2, Animated](/images/advanced_im/mold_flow_visualized_2.gif)
+
+When running a mold flow analysis, you’ll typically see a list of plots related to these three categories:
+
+The simulation can help answer any number of questions related to part defects and tool design optimization:
+
+**Question 1: Will the part fill?**
+
+- Check total fill time for the part to pack out, understand if specific regions aren’t filling and adjust gate size and press pressure accordingly.
+
+<Frame caption="Fill Time Plot">
+    <img src="/images/advanced_im/fill.gif" />
+</Frame>
+
+**Question 2: Where is the ideal gate location?**
+
+By looking at the flow resistance across the part, the simulation can inform you where to place the ideal gate location based on optimizing for the least amount of flow resistance at the start of the plastic shot (to prevent a short shot).
+
+- The value of the flow resistance is from 0 to 1. The value of the flow resistance more higher, the melt flow more difficult.
+
+<Frame caption="Flow Resistance Indicator Plot">
+  <img src="/images/advanced_im/gate_location.png" />
+</Frame>
+
+****************Question 3: Will the part warp within tolerance? Is the part shrinkage within the tolerances specified on the engineering drawing?**
+
+Polymers have high thermal expansion coefficients which can cause significant shrinkage, and hence warpage of the part during cooling of plastic in the mold. [Corrective action](https://www.notion.so/Advanced-Injection-Molding-Part-Design-Mold-Flow-Analysis-2ccd483ead364a9890156addea9ea0d2?pvs=21) can include changing the residence time, increase mold temperature, barrel temperature, etc.
+
+<Frame caption="Warpage Plot">
+  <img src="/images/advanced_im/warpage.gif" />
+</Frame>
+
+Other such questions include:
+| Question: | Considerations |  |  |
+| --- | --- | --- | --- |
+| 1. Will the part fill?  | The Fill time shows the stream forward position at regular intervals of the cavity filling. Each contour filling each section model depicts the same time. When filling start, shown in dark blue, the last place filled red. If the product short shot, unfilled portions without color. |  |  |
+| 2. What are the optimal processing processing conditions? | Often provided directly by the plastic vendor and specified on the datasheet. Mold flow can confirm these processing conditions are suitable.  |  |  |
+| 4. How many gates are required? | If dealing with thin or large parts, multiple gates help with reducing gate size or dealing with thin places in cavity that can bottleneck resin flow.  |  |  |
+| 5. Where will the weld lines be? | Weld lines occur in places where two flow fronts have converged (you’ll often see a visual “scratch” from where the flow fronts meet). The presence of
+weld lines may indicate a structural weakness and/or a surface blemish. |  |  |
+| 6. Are there air traps? | This may be where the melt stops at a convergence of at least 2 flow fronts, or at the ends of flow paths. Tool venting may be needed to eliminate air traps.  |  |  |
+| 7. Are the ribs too thin to fill, or are the ribs too thick? |  |  |  |
+| 9. Is the press big enough?  |  |  |  |
+| 10. Is the gate the right size? |  |  |  |
+| 12. Is the cooling uniform?  | Bulk temperature is used to indicate the weighted average temperature across the thickness. Bulk temperature has more physical significance than a simple average temperature as the polymer melt flows. Bulk temperature represents the energy that is transported through a particular location. |  |  |
+
+## Final Words
+Plastic part design is an iterative process, where the design engineer (most likely you!) work hand-in-hand with the tooling engineers to create an optimized design. It may seem like a lot of content to digest, but you now know what it takes to go from a napkin sketch, preliminary blocks in CAD, to a final product capable of being mass manufactured.

@@ -1,0 +1,82 @@
+---
+title: "GD&T and tolerances guide"
+description:
+---
+
+School, in our experience, did a horrible job of explaining GD&T and tolerances. Here, we do our best to give you everything you’ll need to prep yourselves for job interviews, and more!
+
+## Tolerance
+
+Mechanical tolerance refers to the permissible amount of deviation or variation from a specified dimension or measurement in a mechanical system or component.
+
+**Put simply, a manufacturer can’t make a part to the exact size you ask it to.** For instance, a 5cm part may have a +/- 5mm tolerance on it. Standard industry tolerances are +/- 10% of the nominal length.
+
+**Mechanical tolerance is critical in ensuring the proper functioning and longevity of mechanical systems**, as components that are too loose or too tight can lead to issues such as interference, excessive wear, or failure.
+
+To ensure that components meet required tolerances, manufacturers may use a variety of techniques, including precision machining, testing and inspection, and statistical analysis. **Tolerance values are typically specified in engineering drawings** and other technical documents that detail the required specifications for a given component or assembly.
+
+## Tolerance stack-up
+
+A tolerance stack-up is the accumulation of individual part tolerances in an assembly of parts.
+
+The accumulation of these tolerances can result in an overall deviation from the intended or ideal dimensions of the system, leading to potential issues such as interference, misalignment, or improper functioning.
+
+A tolerance stack-up analysis is therefore used to determine the overall effect of these accumulated tolerances on the final product, allowing engineers to identify potential issues and adjust tolerances or design features as necessary to ensure proper functioning.
+
+See the assembly below for example:
+
+<Frame >
+    <img src="/images/tolerances/example.png" />
+</Frame>
+
+Using a worst-case tolerance analysis, we deduce that the total length of A + B + C will at most be 0.1 + 0.1 + 0.1 = 0.3 longer than the nominal total length. Therefore, we would size the gap between the pink block and the gray container to be at least 0.3, to ensure the blocks always fit within the cavity.
+
+## Worst case vs statistical tolerance analysis
+
+**Worst case** and **RSS (Root Sum Square)** are two common methods for analyzing tolerance stack-up. In the example above, we used a worst case stack-up analysis.
+
+**Worst case analysis** assumes that all individual tolerances are at their maximum allowable limit, resulting in the worst possible outcome. This approach provides a conservative estimate of the total tolerance stack-up, as it assumes that all components are at their worst possible state. In worst case analysis, the effect of individual tolerances is added up in a linear fashion.
+
+**Root Sum Square (RSS) analysis** considers the statistical distribution of each individual tolerance and calculates the root sum square of the variances to determine the overall tolerance stack-up. The RSS approach provides a more realistic estimate of the total tolerance stack-up, as it takes into account the probability of different combinations of tolerances occurring. This approach is also more computationally intensive, as it requires statistical analysis of individual tolerances.
+
+**RSS :**
+
+- Each tolerance assumes a normal distribution
+- There will be a yield, meaning some parts will fail
+
+<Frame >
+    <img src="/images/tolerances/rss.png" />
+</Frame>
+
+In practice, it is likely you’ll be using RSS. It is a matter of cost. The tighter your tolerances have to be, the more expensive your part gets. That is why RSS typically leads to cheaper part costs because you don’t need to specify extremely tight tolerances on your parts. Of course, there are a small percentage of failed parts, but the savings on the tooling costs are far greater than the costs of out of spec parts.
+
+## GD&T
+
+Dimensional tolerances don’t explain how parts are intended to be used in assembly. For instance
+
+- Can’t specify how flat a surface needs to be in order to seal to a gasket
+- Can’t specify how straight a hole needs to be to thread a rod.
+
+This is where GD&T comes in. There are 5 categories of GD&T callouts:
+
+- Form
+    - Flatness
+    - Straightness
+    - Circularity
+    - Cylindricity
+- Location
+    - Position
+    - Concentricity
+    - Symmetry
+- Orientation
+    - Parallelism
+    - Perpendicularity
+    - Angularity
+- Profile
+    - Profile of a surface
+    - Profile of a line
+- Runout
+    - Circular runout
+    - Total runout
+
+We know that GD&T can get confusing, so let’s look at an example to make things more concrete.
