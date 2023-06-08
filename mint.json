@@ -46,11 +46,11 @@
   "navigation": [
     {
       "group": "Welcome",
-      "pages": ["introduction", "features", "quickstart Guide"]
+      "pages": ["introduction", "quickstart Guide"]
     },
     {
       "group": "Finding Companies & Landing Interviews",
-      "pages": ["The Daily Routine", "Defining your Dream Role", "Where to Find Opportunities", "Cold Emailing Guide"]
+      "pages": ["The Daily Routine", "Defining your Dream Role", "Company Types & Stages","Where to Find Opportunities", "Cold Emailing Guide"]
     },
     {
       "group": "Position Yourself for Success",
