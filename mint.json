@@ -2,10 +2,10 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Hardware FYI Pro",
   "logo": {
-    "dark": "/logo/dark.png",
-    "light": "/logo/light.png"
+    "dark": "/logo/logo_hardwarefyi_2.png",
+    "light": "/logo/logo_hardwarefyi_2.png"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/images/favicon_fyi.png",
   "colors": {
     "primary": "#0069ED",
     "light": "#4D9CFF",
@@ -54,12 +54,16 @@
     },
     {
       "group": "Position Yourself for Success",
-      "pages": ["Resume Writing 101", "Design Portfolios", "Personal Projects", "Project Oriented Coursework", "Engineering Clubs"]
+      "pages": ["Resume Writing 101", "Design Portfolios", "Personal Projects", "Gaining Experience without Internships", "Engineering Clubs"]
+    },
+    {
+      "group": "Interviews 101",
+      "pages": ["The Interviewers Mindset", "Big Tech Interviewing 101", "Start Up Interviewing 101", "Tesla & SpaceX Interview Format", "Apple Interview Format"]
     },
     {
         "group": "Cracking the ME Technical Interview",
         "pages": [
-            "Cantilever Beams 101",  "Stress & Strain",  "Moment of Inertia", "Free Body Diagrams",  "Failure Modes", "Thermodynamics",
+            "Technical Interview Quickstart", "Cantilever Beams 101",  "Stress & Strain",  "Moment of Inertia", "Free Body Diagrams",  "Failure Modes", "Thermodynamics",
            {
                 "group": "Mock Interview Problems",
                 "pages": ["Beam Bending Problems", "Stress & Strain Problems", ",Moment of Inertia Problems","Thermodynamics Problems", "Critical dimensions & tolerance stack problems", "General manufacturing problems"]
@@ -72,7 +76,7 @@
     },
     {
         "group": "Mechanical Engineering Fundamentals",
-        "pages": [
+        "pages": [ "ME Fundamentals Quickstart",
             {
                 "group": "Materials",
                 "pages": ["Plastics", "Metals", "Rubbers & Elastomers"]
