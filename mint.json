@@ -54,11 +54,16 @@
     },
     {
       "group": "Position Yourself for Success",
-      "pages": ["Resume Writing 101", "Design Portfolios", "Personal Projects", "Gaining Experience without Internships", "Engineering Clubs"]
+      "pages": ["Resume Writing 101", "Design Portfolios", "Gaining Experience without Internships"]
     },
     {
       "group": "Interviews 101",
-      "pages": ["The Interviewers Mindset", "Big Tech Interviewing 101", "Start Up Interviewing 101", "Tesla & SpaceX Interview Format", "Apple Interview Format"]
+      "pages": ["The Interviewers Mindset", "Big Tech Interviewing 101", "Start Up Interviewing 101",
+                   {
+                "group": "Company Interviewing Processes",
+                "pages": ["Apple", "Tesla & SpaceX", "Start-Ups"]
+           }
+        ]
     },
     {
         "group": "Cracking the ME Technical Interview",
@@ -68,10 +73,6 @@
                 "group": "Mock Interview Problems",
                 "pages": ["Beam Bending Problems", "Stress & Strain Problems", ",Moment of Inertia Problems","Thermodynamics Problems", "Critical dimensions & tolerance stack problems", "General manufacturing problems"]
            },
-           {
-                "group": "Company Interviewing Processes",
-                "pages": ["Apple", "SpaceX", "Tesla", "Start-Ups"]
-           }
         ]
     },
     {

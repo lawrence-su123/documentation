@@ -1,0 +1,195 @@
+---
+title: "Cantilever Beams 101"
+description:
+---
+
+This is perhaps the **most frequently tested topic in  mechanical engineering interviews.**
+As such, we’re going to spend a lot of time to make we review over the core concepts!
+
+## Why do beams even matter?
+
+Beams are everywhere if you look closely enough.
+Your bicycle chassis can be modeled as cantilevered beams, just as much as the members of a crane can.
+It is important to know how much they will deflect to ensure they do not cause damage to other parts of the structure or pose a safety risk to users.
+
+<Frame caption="">
+<img width = "600"  src="/images/cantilever_beams/bending.gif" />
+</Frame>
+
+### An Apple Case: iPhone 6
+
+
+Still don’t think beam modeling is important? Take the [iPhone 6 bend-gate scandal](https://apple.fandom.com/wiki/Bendgate) as an example.
+
+Shortly after public release and ramping through mass production, it was discovered that the phone chassis was susceptible to bending under
+pressure, like in a tight pocket. Any number of issues could have caused this issue like marginal safety factors or
+material manufacturing defects (most likely). In the next gen. design release of the iPhone 6s/7, it
+was rumored they switched to another series of aluminum with greater tensile strength [7000 series](https://www.express.co.uk/life-style/science-technology/592428/Apple-iPhone-6S-Liquid-Metal-Bendgate).
+
+<Frame caption="Apple iPhone 6 BendGate">
+<img width = "600"  src="/images/cantilever_beams/bendgate.gif" />
+</Frame>
+
+
+## Stresses in beams
+
+Before we even start talking about bending, we first need to discuss stresses in beams.
+
+There are two common internal stresses in beams that result from:
+<Frame caption="Shear & Bending Moment Stresses">
+<img width = "600"  src="/images/cantilever_beams/shear_bend.png" />
+</Frame>
+
+
+When you press down on the end of a cantilevered beam, there are internal shear stresses that you product as a result of shearing each cross section in the beam down. There are also bending moments that result from you putting the top half of the beam in tension, and the bottom half of the beam in compression.
+
+A good way to think about how stresses are produced is by thinking about how cantilever beams react under a given load:
+
+**Forces (load) on beam -> Bending moments in beam (deflection) -> Stresses in beam material**
+
+1. You apply a given a load on any object
+2. This causes deflection (small or major movement based on total load applied)
+3. Produces stress in the beam material.
+
+### Types of Stresses
+<Info>
+Take a pencil for example, what are all the ways you call apply stress on the part to cause the pencil to snap?
+</Info>
+The six major types of stress are: Compression, Tension, Shear, Bending, Torsion, Fatigue.
+
+1. **Compressive**: Compressive stress is created by subjecting a material to a force that acts perpendicular to its cross-sectional area, causing the material to **shorten in the direction of the force, but it thickens normally in the direction of the force** (i.e. material is being compressed together).
+2. **Tensile**: Tensile stress is a measure of the internal forces that are acting on a material when it is subjected to an external load or force that tries to **pull it apart or elongate it**.
+3. **Shear**: Stress that results when a material is subjected to **opposing forces that act parallel to each other**, but in opposite directions. The formula for calculating shear stress is given by the equation:
+4. **Bending**: Bending stress is the stress that results from the application of a bending moment to a material, causing it to deform. Bending stress is a combination of tensile/compressive stresses.
+<Frame caption="Tensile & Compressive Forces in Bending">
+<img width = "600"  src="/images/cantilever_beams/bt.png" />
+</Frame>
+
+5. **Torsional**: Torsional stress occurs when a material is subjected to a **twisting or rotational force**. When a material is subjected to torsion, the individual layers of the material will deform and twist relative to one another, leading to shear stresses within the material.
+6. **Fatigue**: Repeated, cyclic stresses and strains at high-stress concentration locations that lead to fatigue stress. Fatigue can lead to the failure of a material due to the repeated application of stress and strain, even when the maximum stress level is below the material's yield stress. Fatigue stress is a common cause of failure in many engineering applications, including aerospace, automotive, and structural components.
+<Frame caption="">
+<img width = "600"  src="/images/cantilever_beams/fatigue.gif" />
+</Frame>
+
+Reference Link: https://www.xometry.com/resources/materials/stress/, need to re-word
+
+### Stress-Induced Failures
+
+If you're having trouble visualizing how these stresses are applied to a beam, these animations below are a great [visual aid](https://github.com/damontallen/SVG-Beam-gif-animation)!
+
+
+Shear Stress Failure Mode:
+<Frame caption="Beam Failure from Shear Stress">
+<img width = "600"  src="/images/cantilever_beams/shear_failure.gif" />
+</Frame>
+
+Bending Moment Failure Mode:
+
+<Frame caption="Beam Failure from Bending Moment Stress">
+<img width = "600"  src="/images/cantilever_beams/bending_failure.gif" />
+</Frame>
+
+Max Deflection Failure Mode:
+<Frame caption="Beam Failure from Excessive Deflection">
+<img width = "600"  src="/images/cantilever_beams/excess_deflection_failure.gif" />
+</Frame>
+
+## Deflection
+
+Deflection refers to the movement of a beam or node from its original position due to the forces and loads being applied to the member.
+
+In undergraduate classes, there's a key focus on the derivation of maximum deflection equations, shear force diagrams, and bending moment diagrams.
+We won't focus on the core theory, but what you need to know for interviews!
+
+For any type of beam with a force applied- it could be a point load, distributed load, bending moments- the deflection depends on four factors: load, length, material of beam, and cross-sectional shape.
+
+![Deflection Equation](/images/cantilever_beams/deflection_eq.png)
+
+1. **Load (P)**: How much force is applied? This can be in the form of multiple, point, or distributed loads
+2. **Length (L)**: Length of the beam
+3. **Material (E)**: Represents the modulus of elasticity- the stiffness of the material
+4. **Cross-Sectional Shape (I)**: Represents the moment of inertia
+
+To reduce deflection on any beam, you can adjust the variables on the numerator and denominator. On the numerator, reduce the load (P) or decrease the length (L) to prevent excessive deflection.
+On the denominator, increase the stiffness by changing the material (E- Young's Modulus), or increase the area moment of inertia (I- related to the cross-section of the beam).
+
+### Common Interview Test Questions:
+
+In technical interviews focused on cantilever beams, you'll want to know these particular loading conditions.
+
+<Frame caption="Cantilever Beam, Point Load">
+<img width = "1200"  src="/images/cantilever_beams/point_load_eq.png" />
+</Frame>
+
+<Frame caption="Cantilever Beam, Distributed Load">
+<img width = "1200"  src="/images/cantilever_beams/distributed_load_eq.png" />
+</Frame>
+
+<Frame caption="Simply Supported Beam, Distributed Load">
+<img width = "1200"  src="/images/cantilever_beams/simply_supported_dload_eq.png" />
+</Frame>
+
+The length factor (L) will always be raised to a power of 3 for standard loading conditions; likewise, in distributed loading conditions the length factor will be
+raised to a power of 4.
+
+For more examples, check out the [beam deflection tables here](https://mechanicalc.com/reference/beam-deflection-tables).
+
+
+## Cross-Sections & Area Moment of Inertia
+
+https://efficientengineer.com/area-moment-of-inertia/
+
+The area moment of inertia (I) is a variable that defines how much resistance a shape (i.e. cross-section of beams) have to bending from its geometry.
+
+<Info>
+Think about a plank of wood subjected to a heavy load. Will it deflect more when the long edge of the cross-section is face down or up?
+</Info>
+
+<Frame caption="Plank deflects more when the load is applied on the longer edge of the cross-section">
+<img width = "1200"  src="/images/cantilever_beams/second_moment_of_area_example.png" />
+</Frame>
+
+The area moment of inertia quantifies the resistance to bending, and reflects how the area of the cross-section is distributed relative to an axis. Your bending axis changes depending on the type of loading condition!
+
+In technical interviews, you'll want to know the area moment of inertia equations for common cross-sections, and which cross-sections are best given different loading conditions.
+<Frame caption="Area Moment of Inertia Table">
+<img width = "1200"  src="/images/cantilever_beams/Area Inertia Table.png" />
+</Frame>
+
+### Advantages of Different Cross-Sections
+
+For resisting bending moment and shear stresses, rectangular cross-sections work best.
+
+I-beams are a form of the rectangle cross-section, and you'll
+often find them in structural designs. I-beams are the most efficient cross-section since they have same resistance to bending
+as rectangles, but optimize for the best strength-to-weight ratio. The flange (horizontal) resists bending and the web (vertical region) resists shear stresses.
+
+![I-Beam](/images/cantilever_beams/i-beam.png)
+
+For carrying torsional loads, hollow cross-sections like a hollow cylinder resist torsional deflection more.
+
+## [Important Equations](https://strucalc.com/blog/learning/bending-shear-and-normal-stress-formulas)
+
+Bending Moment Stress:
+![Bending Moment Stress](/images/cantilever_beams/bending_moment_eq.png)
+
+
+Axial, Normal Stress (Compression or Tension):
+![Bending Moment Stress](/images/cantilever_beams/normal_stress.png)
+
+
+Torsional Stress:
+![Torsional Stress](/images/cantilever_beams/torsion_eq.png)
+
+
+
+
+## Recap: What to remember for Interviews
+
+Beams are essential components in many structures, ranging from buildings and bridges to machines and vehicles. They are used to support loads and distribute them throughout the structure,
+making them critical to the safety and functionality of the system. When a load is applied to a beam,
+it deflects, or bends, as it deforms to accommodate the load.
+
+**We've covered a lot in this post, so take time to read through this multiple times!** A core understanding of cantilever beams will reap benefits
+in technical interviews moving forward.
+

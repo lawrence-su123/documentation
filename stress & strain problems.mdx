@@ -1,0 +1,43 @@
+---
+title: "Beam Bending Problems"
+description:
+---
+## Question #1: Snap Fit Design, `advanced`
+
+I have a snap fit with a given length L that needs to deflect by a given delta in order to snap into place. How would I pick a plastic for the snap fit?
+![Snap Fit Question](/images/snap_fit_question.png)
+
+
+You can assume the grey part is fully fixed and will not deflect.
+
+### **Solution**
+
+In order to solve this problem, we first identify our known and unknowns. We know how long the snap fit is, and how much it needs to deflect. We do not know the material, and therefore do not know any material properties.
+
+In the beam bending deflection equations, the only material property variable out our disposal is E, the Young’s modulus. This will become our main unknown.
+
+Assuming the snap fit deflects like a cantilever beam with a force P applied at its end, we can use the deflection formula:
+![Deflection Equation](/images/deflection.png)
+
+However, we don’t know what P is, so we’ll need another equation. Let’s use the beam bending stress equation.
+
+We know that the max stress occurs at the base of the snap fit because the moment is greatest at the base (force P is applied at the top of the snap, and the base has the longest moment arm from the point of force application). Therefore, the max stress can be calculated using M = PL
+![Max Stress Equation](/images/max_stress_equation.png)
+Now, we can solve for P using our first equation, and plug it into this max stress equation.
+
+1. **Solve for P using equation 1**
+![P Equation](/images/p_equation.png)
+2. Solve for max stress in terms of knowns using the expression for P above and plugging it into the max stress equation.
+![Max Stress Equation2](/images/max_stress_2.png)
+Now we have an equation that says, max stress = known expression * E. **You can use this equation to pick an E, and subsequently confirm that the expression for max stress is < than the yield stress of the material to ensure that the snap fit is only deforming within its elastic region.**
+![Snap Fit Equation](/images/snap_fit_equation.png)
+
+
+
+
+
+
+
+
+
+<Latex>1^3</Latex>
