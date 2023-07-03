@@ -1,0 +1,98 @@
+---
+title: "General Manufacturing Problems"
+description:
+---
+
+## Question #1: Metal plate with a hole
+`beginner`
+
+**Problem**
+
+Part 1: Name 8 ways you could manufacture a metal plate with a hole? Don’t consider practicality in your answers, name any feasible manufacturing method.
+<Frame caption="">
+<img width = "600"  src="/images/general_manufacturing_problems/q1_p1.png" />
+</Frame>
+
+Part 2: How would your answer change if the hole is no longer circular, and is instead a hexagon?
+<Frame caption="">
+<img width = "600"  src="/images/general_manufacturing_problems/q1_p2.png" />
+</Frame>
+
+Part 3: How would your answer change if you had to mass manufacture this hexagonal hole plate?
+
+### Solution
+
+**Part 1:**
+
+1. Metal injection molding the plate (if the plate is thick enough)
+2. Using a manual mill
+3. CNC cutter
+4. Metal die casting
+5. Sand casting
+6. Stamping/shearing (if the plate is thin enough)
+7. Laser-cutting (if the plate is thin enough)
+8. Water-jet cutting
+
+**Part 2:**
+
+Only the CNC and manual mill would not be capable of producing this part. The hexagon has sharp inner corners which can’t be accomplished by a rotating CNC cutter—there will always be an inner radius on the hexagon. With MIM, metal die casting, and sand-casting, this part is a fairly simple geometry that can be formed within a mold (nothing impeding the mold separation paths for MIM and die casting). Stamping/shearing is a viable option because you could simply create a die in the form of the desired hexagon to stamp out the geometry. Lastly, laser-cutting and water-jetting machines can be easily programmed to carve out this hexagonal cutout from stock sheet metal.
+
+**Part 3:**
+
+For mass manufacturing, our goal is to reduce cycle time. Sand casting is a very laborious process because it requires recreating a sand-cast every single time you make the part.
+
+Even if it was possible to make the hexagonal hole with a mill or CNC, these are also time consuming processes with high cycle time that aren’t conducive to MP (mass production). Note that it’s still possible to CNC MP’d parts, but you’d reserve CNC’s for parts that require significantly more complex geometries that aren’t easily molded or stamped.
+
+Laser-cutting and water-jetting are also high-cycle time operations, because it takes a while for the tool to carve through the stock material.
+
+This leaves us with the options of metal die casting, metal injection molding, and stamping/shearing. These three options are the most conducive to MP because the time to manufacture each part is on the order of seconds. For stamping, think of a cookie cutter— it’s super easy to stamp out the cookies from the batter, since it takes you seconds to press down with the die to cut out a cookie. With molding, the overall process of injecting molten metal and cooling it with water-jets takes seconds, and with the advent of [family tools](injection mold) and assembly lines this is an extremely fast process.
+
+## Question #2: Improving injection molding parameters
+`intermediate`
+
+**Problem [Open-ended]:**
+You are an engineer at a consumer electronics company, and you are responsible for designing a new injection-molded part. The part has a complex geometry with several internal features, and you want to ensure that it can be molded without any defects.
+
+To achieve this, you need to design the mold tooling such that it fills the part cavity evenly and completely, without any air pockets or flow marks. You also need to ensure that the part ejects smoothly and cleanly from the mold, without any sticking or deformation.
+
+However, there is a catch: you have a limited budget and time frame for the project, and you need to optimize the design for cost and efficiency. This means that you cannot afford to make the mold tooling too complex or add unnecessary features that will increase the cycle time or waste material.
+
+Given these constraints, can you design a mold tooling that will produce a high-quality part, while minimizing the cost and cycle time? How will you balance the trade-offs between complexity, efficiency, and quality?
+
+### Solution
+
+As an engineer designing an injection-molded part, there are several key factors to consider when trying to balance cost, efficiency, and quality:
+
+1. Material properties: The type of material being used will have a significant impact on the molding process. For example, some materials may require higher mold temperatures or longer cooling times, which can increase cycle time and cost. It's important to select a material that is suitable for the intended use of the part, while also considering the molding process requirements.
+2. Part geometry: The complexity of the part's geometry will impact the molding process, as it can affect the flow of material within the mold cavity. It's important to design the part with proper draft angles, wall thickness, and other features that will allow the material to flow smoothly and evenly, while also ensuring that the part can be ejected cleanly from the mold.
+3. Mold design: The mold tooling must be designed to fit the part geometry, while also allowing for proper filling and ejection. The number of cavities, the placement of gates and runners, and the use of cooling channels will all impact the molding process and must be optimized for efficiency and quality.
+4. Process parameters: The injection molding process is highly dependent on the process parameters, such as melt temperature, injection pressure, and cooling time. These parameters must be carefully controlled to ensure that the part is molded without defects, while also minimizing cycle time and material waste.
+
+Given these factors, here are some strategies that can be used to design a mold tooling that will produce a high-quality part while minimizing cost and cycle time:
+
+1. Use a hot runner system: A hot runner system can reduce material waste and cycle time by keeping the material molten as it flows through the mold cavity. This can also reduce the need for gating and runner design, which can simplify the mold tooling.
+2. Optimize cooling channels: The cooling channels in the mold tooling can have a significant impact on cycle time, as they help to control the cooling rate of the material. By optimizing the placement and size of the cooling channels, it's possible to reduce cycle time without sacrificing quality.
+3. Consider multi-cavity molds: If the part is suitable for it, a multi-cavity mold can increase efficiency by allowing multiple parts to be molded simultaneously. This can also reduce material waste by maximizing the use of the material.
+4. Use automatic ejection: Automatic ejection can increase efficiency by allowing the parts to be ejected without manual intervention. This can also reduce the risk of damage to the parts during ejection.
+
+Overall, the key to designing a mold tooling that balances cost, efficiency, and quality is to carefully consider the material properties, part geometry, mold design, and process parameters. By optimizing these factors and using appropriate molding strategies, it's possible to achieve high-quality parts while minimizing cost and cycle time.
+
+## Question #3: Perfect cube
+`advanced`
+
+**Problem:**
+
+How would you injection mold a perfect cube? No draft angles allowed, ignore wall thickness/sink limitations.
+
+### Solution
+
+Injection molding a perfect cube can be done! At first, it seems impossible to design the mold such that the cube can be removed without drafting angles. For instance, if you align the mold so that the tool separation path is parallel with 4 sets of the cube’s faces, you’re undoubtedly going to need draft angles because the cube won’t pop out of the mold. (See image below, friction between mold and cube due to no draft angle the dark purple edges below)
+
+<Frame caption="">
+<img width = "600"  src="/images/general_manufacturing_problems/q2.png" />
+</Frame>
+When it comes to injection molding, you want to be choose a parting line so that you are able to minimize design changes, such as removing overhangs or adding draft angles. In this case, let’s try rotating the cube around until we can find an orientation that let’s us mold the cube without changing it’s shape. Orient the cube so that it it’s vertices are on the +Z and -Z axis.
+
+Now, let’s try to draw a parting line for the mold. If we try to follow a linear parting line around the midpoint between the top and bottom vertices, we end up with overhang. How can we design the parting line so that there isn’t any overhang?
+
+The trick is to follow the edges of the cube. By doing this, you ensure that all of the faces above the parting line will pop out of the top of the mold, and all of the faces below the parting line will pop out of the bottom of the mold. Thereby, you eliminate any overhang. It’s definitely tricky to solve this problem in your head, it’s super helpful to draw things out, or even make a cube out of paper to help you visualize it. By the way, asking for paper to do things like in this during interviews is perfectly acceptable, and encouraged!

@@ -1,0 +1,119 @@
+---
+title: "Tolerance Stack-Up & Analysis Problems"
+description:
+---
+
+## Question #1: Critical gap
+`beginner`
+
+**Problem**
+
+See sections A, B, and C in the image below. For the purposes of this problem, do not use any assembly tolerances
+(i.e. you cannot specify a dimension from an edge on part A to part B). How would you re-dimension each of these parts to minimize the tolerance of critical gap D?
+
+<Frame caption="">
+<img width = "600"  src="/images/tolerance_stack_up/q1.png" />
+</Frame>
+
+### Solution
+
+In this assembly, we have three parts with their own separate dimensions. Since our goal is to minimize the critical dimension D (presumably to prevent interference between parts A and C across tolerance), we are seeking to reduce the tolerance stack-up from the edge of part A to the edge of part C that dimension D is measuring.
+
+<Frame caption="">
+<img width = "600"  src="/images/tolerance_stack_up/q1_a1.png" />
+</Frame>
+
+The tolerance stack-up loop is shown above. The worst case total stack-up tolerance is 0.1+0.1+0.1+0.1+0.1 = 0.5. In this loop, there are unnecessary dimensions specifying both the top and bottom surface of part A. In this problem, we don’t care about specifying the top or bottom edges. This is an opportunity to tweak our dimensioning scheme on part A to result in the part shown below.
+
+<Frame caption="">
+<img width = "600"  src="/images/tolerance_stack_up/q1_a2.png" />
+</Frame>
+
+In this stack-up loop, we only have a worst case tolerance of 0.1+0.1+0.1 = 0.3. This is how you would re-dimension this part set to minimize critical dimension D.
+
+Note that parts B and C are already properly dimensioned to minimize stack-up tolerance.
+
+## Question #2: Tolerance brainteaser
+`intermediate`
+
+**Problem**
+
+**Part 1:**
+
+How would you fasten two metal parts together so they are aligned well and do not move with respect to each other?
+
+**Part 2:**
+
+Okay, say we do decide to use screws, how many would you need?
+
+**Part 3:**
+
+Say we use two screws, how would you size them to ensure that, across manufacturing tolerance, they always fit?
+
+### Solution
+
+**Part 1**
+
+1. Welding: This involves melting the two pieces of metal and then allowing them to cool and solidify together. Welding provides a strong and permanent bond.
+2. Bolting: This involves using bolts and nuts to clamp the two pieces of metal together. Bolting is easy to do and can be undone if needed, but it may not provide as strong a bond as welding.
+3. Riveting: This involves inserting a metal pin, called a rivet, through holes in the two pieces of metal and then hammering the ends of the pin flat to secure the two pieces together. Riveting provides a strong and permanent bond, but it requires special tools.
+4. Screwing: This involves using screws to hold the two pieces of metal together. Screwing is easy to do and can be undone if needed, but it may not provide as strong a bond as welding, bolting, or riveting.
+5. Adhesive bonding: This involves using an adhesive, such as glue, to bond the two pieces of metal together. Adhesive bonding can be strong and permanent, but it may not be suitable for all types of metal or environments.
+6. Soldering: This involves melting a metal alloy, called solder, and using it to join the two pieces of metal together. Soldering is commonly used for electronics and other small-scale applications.
+
+**Part 2**
+
+If you decide to use screws, you need 2 screws to fasten the two pieces together so they do not move with respect to each other.
+
+A single screw will datum the two parts together such that they are constrained in 5 out of the 6 degrees of freedom. This is shown in design 1 below.
+
+The last degree of freedom is rotation about the singular screw axis. A second screw will remove this last degree of freedom, thus fully constraining the two parts with respect to each other.
+
+<Frame caption="">
+<img width = "1000"  src="/images/tolerance_stack_up/q2_a1.png" />
+</Frame>
+
+**Part 3**
+
+If we need to consider the manufacturing tolerances (a realistic ask), it won’t be possible to pursue design B, since each of the screw holes have positional tolerances. As a result, in the worst tolerance case, the screw holes of the two parts will be offset from each other, and it won’t be possible to thread both screws through both parts. Thus design B fails under this requirement to consider tolerances.
+<Frame caption="">
+<img width = "1000"  src="/images/tolerance_stack_up/q2_a2.png" />
+</Frame>
+
+We could pursue Design C below, which oversizes the one of the two holes. You would size the hole diameter by considering the worst case positional tolerances for the two parts. This allows both screws to be screwed in across tolerance.
+<Frame caption="">
+<img width = "1000"  src="/images/tolerance_stack_up/q2_a3.png" />
+</Frame>
+
+But we can do better. this solution isn’t ideal, because we end up only semi-constraining the part in the 6th degree of freedom, rotation about the screw. Since the hole is oversized, the pink part can rotate slightly still.
+
+This leads us to our solution, Design D shown below. Design D uses a feature we call a slot. The slot allows us to fully constrain the part rotationally about the tight screw, while accounting for lateral positional screw tolerance at the same time. This ensures that we can align the pink part to the purple part perfectly across tolerance.
+<Frame caption="">
+<img width = "700"  src="/images/tolerance_stack_up/q2_a4.png" />
+</Frame>
+
+## Question #3: Home-button on a smartphone
+`advanced`
+
+**Problem**
+How would you datum & design the mounting mechanism for button for a smartphone to minimize its X-Y-Z tolerance relative to the hole on the display?
+<Frame caption="">
+<img width = "800"  src="/images/tolerance_stack_up/q3.png" />
+</Frame>
+
+### Solution
+Fundamentally, there are two tolerances you are trying to minimize. You have your button’s ******positional tolerance****** and it’s ****************************part tolerance****************************.
+
+In this case, to minimize the **positional tolerance** we want to mount the button to the display glass (purple). If our button was mounted to the gray body of the smartphone, there would be a longer tolerance loop through the gray body to the display glass to the button. Therefore, we can immediately eliminate any mounting mechanisms that stem from the gray part.
+
+Next, in order to minimize the positional tolerance of the button center relative to the aperture (the hole in the display glass), we realize that we should datum the button to the aperture itself. Moreover, **we opt to maximize the button diameter as much as possible** (so it can fit across tolerance). This also helps us minimize gap between the button and the display aperture edge.
+
+This requires us to keep a **tight part tolerance** on both the display aperture and button center.
+
+Finally, since the button is datum’d to the display aperture using it’s own diameter, we don’t want to use screws, snap-fits, or any other position dependent fastening methods to mount our button to the display glass. Doing so would “double-datum” our button. *(If you are confused by this, compare it to the example problem above, where the two tight hole screws failed to fasten the two pieces of metal across tolerance)*
+
+Instead, we use an adhesive (blue) that will adhere the glass directly. This setup allows the button to be installed by simply fitting it into the display glass hole, and pressing down on the mounting arms (dark purple) to activate the adhesive.
+
+<Frame caption="">
+<img width = "800"  src="/images/tolerance_stack_up/q3_a1.png" />
+</Frame>

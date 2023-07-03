@@ -1,0 +1,52 @@
+---
+title: "General Manufacturing Problems"
+description:
+---
+
+## Question #1: Metal plate with a hole
+`beginner`
+
+**Problem**
+
+Part 1: Name 8 ways you could manufacture a metal plate with a hole? Don’t consider practicality in your answers, name any feasible manufacturing method.
+<Frame caption="">
+<img width = "600"  src="/images/general_manufacturing_problems/q1_p1.png" />
+</Frame>
+
+Part 2: How would your answer change if the hole is no longer circular, and is instead a hexagon?
+<Frame caption="">
+<img width = "600"  src="/images/general_manufacturing_problems/q1_p2.png" />
+</Frame>
+
+Part 3: How would your answer change if you had to mass manufacture this hexagonal hole plate?
+
+### Solution
+
+**Part 1:**
+
+1. Metal injection molding the plate (if the plate is thick enough)
+2. Using a manual mill
+3. CNC cutter
+4. Metal die casting
+5. Sand casting
+6. Stamping/shearing (if the plate is thin enough)
+7. Laser-cutting (if the plate is thin enough)
+8. Water-jet cutting
+
+**Part 2:**
+
+Only the CNC and manual mill would not be capable of producing this part. The hexagon has sharp inner corners which can’t be accomplished by a rotating CNC cutter—there will always be an inner radius on the hexagon. With MIM, metal die casting, and sand-casting, this part is a fairly simple geometry that can be formed within a mold (nothing impeding the mold separation paths for MIM and die casting). Stamping/shearing is a viable option because you could simply create a die in the form of the desired hexagon to stamp out the geometry. Lastly, laser-cutting and water-jetting machines can be easily programmed to carve out this hexagonal cutout from stock sheet metal.
+
+**Part 3:**
+
+For mass manufacturing, our goal is to reduce cycle time. Sand casting is a very laborious process because it requires recreating a sand-cast every single time you make the part.
+
+Even if it was possible to make the hexagonal hole with a mill or CNC, these are also time consuming processes with high cycle time that aren’t conducive to MP (mass production). Note that it’s still possible to CNC MP’d parts, but you’d reserve CNC’s for parts that require significantly more complex geometries that aren’t easily molded or stamped.
+
+Laser-cutting and water-jetting are also high-cycle time operations, because it takes a while for the tool to carve through the stock material.
+
+This leaves us with the options of metal die casting, metal injection molding, and stamping/shearing. These three options are the most conducive to MP because the time to manufacture each part is on the order of seconds. For stamping, think of a cookie cutter— it’s super easy to stamp out the cookies from the batter, since it takes you seconds to press down with the die to cut out a cookie. With molding, the overall process of injecting molten metal and cooling it with water-jets takes seconds, and with the advent of [family tools](injection mold) and assembly lines this is an extremely fast process.
+<Frame caption="">
+<img width = "600"  src="/images/tolerance_stack_up/q1.png" />
+</Frame>
+

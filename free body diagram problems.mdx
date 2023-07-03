@@ -1,0 +1,124 @@
+---
+title: "Free Body Diagram Problems"
+description:
+---
+
+## Question #1: Car driving in a circle
+`beginner`
+
+**Problem**
+
+A car of mass M is driving in a circle with radius r, on a pavement with frictional constant mu. How fast does the car need to go until it starts slipping off of it’s circular path?
+
+
+![Free Body Diagram: Car Driving in Circle](/images/fbd_problems/q1.png)
+
+### Solution
+
+In general with these types of problems, don’t try to immediately start rushing through your memory banks and trying to “remember how to solve this problem.”
+
+The best approach is to take a step back and think about the forces acting on the car—just like with any FBD problem.
+
+We know the force of gravity acts into the page on the car, and that the normal force of the ground acts in the reverse direction (out of the page). These forces get cancelled out as a result.
+
+We also know that there is frictional force acting on the car, although it isn’t immediately clear which direction it is acting in. There are two components to the frictional force.
+
+The first component acts in the direction of the car’s motion, allowing the wheels to move the car forward. We could analyze this component, but it isn’t what the problem is asking for.
+
+The second component acts perpendicular to the car’s motion, and this is the component of friction that keeps the car moving in a circle. We know that this must equal our centripetal force, which is the force necessary to maintain circular motion.
+![Force_Friction](/images/fbd_problems/q1_eq1.png)
+
+Therefore, we also know that the maximum force of friction the surface can exert on the car is equal to mu * Mg. With these two expressions for frictional force, we can solve for our max velocity.
+
+![Velocity_max](/images/fbd_problems/q1_eq2.png)
+
+## Question #2: Spaceship door design
+`intermediate`
+
+**Problem**
+
+Suppose you are tasked with the problem of designing a door for a spaceship. The CEO has one requirement for the door—it must take 5N of force throughout its entire travel (between 0 and 90 degrees) to open and close the door. How would you design a hinge mechanism so that this requirement could be met? The door has a length L and weight of 10N (evenly distributed mass).
+
+<Frame caption="">
+<img width = "400"  src="/images/fbd_problems/q2.png" />
+</Frame>
+
+### Solution
+
+![Question 2, Moment Equation](/images/fbd_problems/q2_eq1.png)
+
+<Frame caption="">
+<img width = "600"  src="/images/fbd_problems/q2_a1.png" />
+</Frame>
+
+It is difficult to approximate this sinusoidal moment profile using a purely mechanical solution. Without building an electromechanical software-based solution, what is one way we could mechanically approximate this moment profile?
+
+<Info>
+Hint, draw a best fit line through the curve.
+</Info>
+
+We draw this best fit line through the graph of Moment about the hinge required throughout the full 90 degrees of rotation. It follows the sinusoid pretty well!
+<Frame caption="">
+<img width = "600"  src="/images/fbd_problems/q2_a2.png" />
+</Frame>
+
+What fundamental mechanisms follow a simple linear profile? A spring! You are probably used to seeing Hooke’s Law in the form of F=kx, where x is the compression/stretch of a linear spring. Torsional springs, which provide a torque, are the same
+except the moment varies with angle (instead of force with displacement). See the torsional spring Hooke’s Law below:
+
+![Question 2, Torque Equation](/images/fbd_problems/q2_eq2.png)
+
+Therefore, by using a torsional spring in the hinge, we can ensure that the user feels a more or less constant force profile as they open and close the spaceship door.
+
+## Question #3: Rolling ball
+`advanced`
+
+**Part 1**
+
+Say you have a ball (perfect sphere) with mass M and radius R rolling on a surface with a coefficient of friction mu and initial velocity of omega. How long will it take for the ball to begin rolling without slipping?
+
+<Frame caption="">
+<img width = "600"  src="/images/fbd_problems/q3.png" />
+</Frame>
+
+**Part 2**
+
+Now that the ball is rolling without slipping, will it ever come to a stop and why?
+
+***Part 3**
+
+What if the ball is in a vacuum (i.e. there is no air) and the floor is perfectly smooth?
+
+### Solution
+
+**Part 1**
+
+Let’s draw out the FBD for forces acting on the ball.
+
+First of all, you have gravity acting on the ball, but we can assume the normal force from the floor fully cancels gravity out. This leaves us with the force of friction.
+
+Since the ball has an initial velocity and is rotating clockwise, we know that the ball exerts a force in the negative X direction on the floor. The floor exerts and equal and opposite force on the ball, which gives us the positive X direction force of mu (the coefficient of friction) times Mg (gravitational force on the ball).
+<Frame caption="">
+<img width = "600"  src="/images/fbd_problems/q3_a1.png" />
+</Frame>
+
+Now let’s write out the force and moment balance, also noting the moment of inertia of a sphere (I = 2/5MR^2).
+![Question 3, Eq 1](/images/fbd_problems/q3_eq1.png)
+Given these forces, we can write out the equation of motions for this body. Namely, we can write equations of motion for the x acceleration and angular acceleration.
+![Question 3, Eq 1](/images/fbd_problems/q3_eq2.png)
+
+Finally, we can solve for x_doubledot and theta_doubledot:
+![Question 3, Eq 1](/images/fbd_problems/q3_eq3.png)
+
+Now let’s use our no-slip condition, stating that the speed the ball travels is equal exactly to the angular velocity times the sphere’s radius.
+![Question 3, Eq 1](/images/fbd_problems/q3_eq4.png)
+
+Plugging our equations of motion into this equation and solving for t, we get to our solution
+![Question 3, Eq 1](/images/fbd_problems/q3_eq5.png)
+
+************Part 2************
+
+A ball will come to a halt due to air resistance and minor imperfections in the surface it rolls on.
+
+************Part 3************
+
+In this case, neither air resistance or imperfect surface flatness will exert forces on the ball. However, this doesn’t mean the ball doesn’t come to a complete stop. Because there is no such thing as a fully rigid body, this sphere is subject to deformation due to its own weight as it rolls. As a result, parts of the sphere undergo relaxation and compression as it rolls (whichever surface is pressed against the floor). This cyclic relaxation and compression is known as hysteresis, and the energy loss from this cyclic loading is dissipated as heat. As a result, eventually the ball’s kinetic energy will be fully converted to thermal energy, and it will come to a halt, regardless of a surface’s smoothness or environment’s lack of air.

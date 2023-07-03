@@ -58,7 +58,7 @@
     },
     {
       "group": "Interviews 101",
-      "pages": ["The Interviewers Mindset", "Big Tech Interviewing 101", "Start Up Interviewing 101",
+      "pages": ["The Interviewers Mindset", "Big Tech Interviewing 101", "Start Up Interviewing 101", "Design Challenges (? Maybe Include",
                    {
                 "group": "Company Interviewing Processes",
                 "pages": ["Apple", "Tesla & SpaceX", "Start-Ups"]
@@ -71,8 +71,8 @@
             "Technical Interview Quickstart", "Cantilever Beams 101",  "Stress & Strain",  "Moment of Inertia", "Free Body Diagrams",  "Failure Modes", "Thermodynamics",
            {
                 "group": "Mock Interview Problems",
-                "pages": ["Beam Bending Problems", "Stress & Strain Problems", ",Moment of Inertia Problems","Thermodynamics Problems", "Critical dimensions & tolerance stack problems", "General manufacturing problems"]
-           },
+                "pages": ["Beam Bending Problems", "Stress & Strain Problems",  "Free Body Diagram Problems", "Thermodynamics Problems", "Tolerance Stack-Up & Analysis Problems", "General Manufacturing Problems"]
+           }
         ]
     },
     {
