@@ -50,7 +50,7 @@
     },
     {
       "group": "Finding Companies & Landing Interviews",
-      "pages": ["The Daily Routine", "Defining your Dream Role", "Company Types & Stages","Where to Find Opportunities", "Cold Emailing Guide"]
+      "pages": ["The_Daily_Routine", "Defining_your_Dream Role", "Company_Types_&_Stages","Where_to_Find_Opportunities", "Cold_Emailing_Guide"]
     },
     {
       "group": "Position Yourself for Success",
@@ -67,7 +67,7 @@
             "Technical Interview Quickstart", "Cantilever Beams 101",  "Stress & Strain",  "Moment of Inertia", "Free Body Diagrams",  "Failure Modes", "Thermodynamics",
            {
                 "group": "Mock Interview Problems",
-                "pages": ["Beam Bending Problems", "Stress & Strain Problems",  "Free Body Diagram Problems", "Thermodynamics Problems", "Tolerance Stack-Up & Analysis Problems", "General Manufacturing Problems"]
+                "pages": ["Beam_Bending_Problems", "Stress_&_Strain_Problems",  "Free_Body_Diagram_Problems", "Thermodynamics Problems", "Tolerance Stack-Up & Analysis Problems", "General Manufacturing Problems"]
            }
         ]
     },
