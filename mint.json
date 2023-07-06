@@ -50,7 +50,11 @@
     },
     {
       "group": "Finding Companies & Landing Interviews",
-      "pages": ["The_Daily_Routine", "Defining_your_Dream Role", "Company_Types_&_Stages","Where_to_Find_Opportunities", "Cold_Emailing_Guide"]
+      "pages": ["part_1/The_Daily_Routine",
+                "part_1/Defining_your_Dream_Role",
+                "part_1/Company_Types_&_Stages",
+                "part_1/Where_to_Find_Opportunities",
+                "part_1/Cold_Emailing_Guide"]
     },
     {
       "group": "Position Yourself for Success",
