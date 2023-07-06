@@ -113,6 +113,10 @@
     "github": "https://github.com/mintlify",
     "linkedin": "https://www.linkedin.com/company/mintsearch"
   },
-  "backgroundImage": "/images/gradient_background.png"
+  "backgroundImage": "/images/gradient_background.png",
+  "modeToggle": {
+  "default": "light",
+  "isHidden": true
+  }
 
 }
