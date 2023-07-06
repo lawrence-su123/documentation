@@ -51,32 +51,41 @@ Using a worst-case tolerance analysis, we deduce that the total length of A + B 
 In practice, it is likely you’ll be using RSS. It is a matter of cost. The tighter your tolerances have to be, the more expensive your part gets. That is why RSS typically leads to cheaper part costs because you don’t need to specify extremely tight tolerances on your parts. Of course, there are a small percentage of failed parts, but the savings on the tooling costs are far greater than the costs of out of spec parts.
 
 ## GD&T
-
-Dimensional tolerances don’t explain how parts are intended to be used in assembly. For instance
+Dimensional tolerances don’t explain how parts are intended to be used in assembly. For instance, dimensional tolerances:
 
 - Can’t specify how flat a surface needs to be in order to seal to a gasket
 - Can’t specify how straight a hole needs to be to thread a rod.
 
-This is where GD&T comes in. There are 5 categories of GD&T callouts:
+This is where GD&T comes in! There are 5 categories of GD&T callouts:
 
-- Form
+1. **Form**
     - Flatness
     - Straightness
     - Circularity
     - Cylindricity
-- Location
+
+
+2. **Location**
     - Position
     - Concentricity
     - Symmetry
-- Orientation
+
+3. **Orientation**
     - Parallelism
     - Perpendicularity
     - Angularity
-- Profile
+4. **Profile**
     - Profile of a surface
     - Profile of a line
-- Runout
+5. **Runout**
     - Circular runout
     - Total runout
 
-We know that GD&T can get confusing, so let’s look at an example to make things more concrete.
+We know that GD&T can get confusing, but the premise is simple!
+
+GD&T is used to define the nominal (theoretically perfect) geometry of parts and assemblies, to define the allowable variation in form and possible size of individual features, and to define the allowable variation between features.
+
+For each symbol, there's a corresponding measurement method/gauge used to assess the variation in the feature. For example, **flatness** and **straightness** on a part, manufacturers will use a coordinate measurement machine to check the flatness variation along a line, or surface.
+
+
+![CMM](/images/tolerances/cmm.png)

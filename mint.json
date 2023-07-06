@@ -58,11 +58,7 @@
     },
     {
       "group": "Interviews 101",
-      "pages": ["The Interviewers Mindset", "Big Tech Interviewing 101", "Start Up Interviewing 101", "Design Challenges (? Maybe Include",
-                   {
-                "group": "Company Interviewing Processes",
-                "pages": ["Apple", "Tesla & SpaceX", "Start-Ups"]
-           }
+      "pages": ["The Interviewers Mindset", "Big Tech vs. Start-up Interviewing", "Apple's Interviewing Process", "Tesla & SpaceX Interviewing Process","Design Challenges (? Maybe Include"
         ]
     },
     {
@@ -95,7 +91,7 @@
     {
       "group": "Hardware Cheatsheets",
       "pages": [
-        "Cheatsheet Quickstart Guide", "The Ultimate MechE Technical Interviewing Cheatsheet", "Metal Manufacturing Basics", "Plastic Manufacturing Basics", "Reliability Engineering & Consumer Product Testing", "Phases of Consumer Product Development"
+        "Cheatsheet Quickstart Guide", "MechE Technical Interviewing Cheatsheet", "Manufacturing Methods Cheatsheet"
       ]
     },
     {
