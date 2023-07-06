@@ -46,7 +46,7 @@
   "navigation": [
     {
       "group": "Welcome",
-      "pages": ["introduction", "quickstart Guide"]
+      "pages": ["introduction", "quickstart_guide"]
     },
     {
       "group": "Finding Companies & Landing Interviews",
