@@ -54,24 +54,42 @@
                 "part_1/Defining_your_Dream_Role",
                 "part_1/Company_Types_&_Stages",
                 "part_1/Where_to_Find_Opportunities",
-                "part_1/Cold_Emailing_Guide"]
+                "part_1/Cold_Emailing_Guide",
+                "part_1/Referrals_101"]
     },
     {
       "group": "Position Yourself for Success",
-      "pages": ["Resume Writing 101", "Design Portfolios", "Gaining Experience without Internships"]
+      "pages": ["part_2/Resume_Writing_101",
+                "part_2/Design_Portfolios",
+                "part_2/Gaining_Experience_without_Internships"]
     },
     {
       "group": "Interviews 101",
-      "pages": ["The Interviewers Mindset", "Big Tech vs. Start-up Interviewing", "Apple's Interviewing Process", "Tesla & SpaceX Interviewing Process","Design Challenges (? Maybe Include"
+      "pages": ["part_3/The_Interviewers_Mindset",
+                "part_3/Big_Tech_vs._Start-up_Interviewing",
+                "part_3/Apple's_Interviewing_Process",
+                "part_3/Tesla_&_SpaceX_Interviewing Process",
+                "part_3/Design Challenges (? Maybe Include"
         ]
     },
     {
         "group": "Cracking the ME Technical Interview",
         "pages": [
-            "Technical Interview Quickstart", "Cantilever Beams 101",  "Stress & Strain",  "Moment of Inertia", "Free Body Diagrams",  "Failure Modes", "Thermodynamics",
+            "part_4/Technical_Interview_Quickstart",
+            "part_4/Cantilever_Beams_101",
+            "part_4/Stress_&_Strain",
+            "part_4/Moment_of_Inertia",
+            "part_4/Free_Body_Diagrams",
+            "part_4/Failure_Modes",
+            "part_4/Thermodynamics",
            {
                 "group": "Mock Interview Problems",
-                "pages": ["Beam_Bending_Problems", "Stress_&_Strain_Problems",  "Free_Body_Diagram_Problems", "Thermodynamics Problems", "Tolerance Stack-Up & Analysis Problems", "General Manufacturing Problems"]
+                "pages": ["part_4/Beam_Bending_Problems",
+                          "part_4/Stress_&_Strain_Problems",
+                          "part_4/Free_Body_Diagram_Problems",
+                          "part_4/Thermodynamics_Problems",
+                          "part_4/Tolerance_Stack-Up_&_Analysis_Problems",
+                          "part_4/General_Manufacturing_Problems"]
            }
         ]
     },
@@ -80,15 +98,29 @@
         "pages": [ "ME Fundamentals Quickstart",
             {
                 "group": "Materials",
-                "pages": ["Plastics", "Metals", "Rubbers & Elastomers"]
+                "pages": ["part_5/Plastics",
+                          "part_5/Metals",
+                          "part_5/Rubbers_&_Elastomers"]
             },
             {
                 "group": "Consumer Product Design",
-                "pages": ["Injection Molding Guide", "Advanced Injection Molding","Injection Molding Part Defects", "CNC Machining Guide", "Die-Casting", "Compression Molding Guide", "Die Cutting Guide", "GD&T and Tolerance Guide","Color, Material, Finish (CMF)", "3D Printing Methods"]
+                "pages": ["part_5/Injection_Molding_Guide",
+                          "part_5/Advanced_Injection_Molding",
+                          "part_5/Injection_Molding_Part_Defects",
+                          "part_5/CNC_Machining_Guide",
+                          "part_5/Die-Casting",
+                          "part_5/Compression_Molding_Guide",
+                          "part_5/Die_Cutting_Guide",
+                          "part_5/GD&T_and_Tolerance_Guide",
+                          "part_5/Color,_Material,_Finish_(CMF)",
+                          "part_5/3D_Printing_Methods"]
             },
             {
                 "group": "Reliability & Test",
-                "pages": ["Reliability", "Failure Analysis", "Plastic Composition & Aging", "Mechanical Testing"]
+                "pages": ["Reliability",
+                          "Failure Analysis",
+                          "Plastic Composition & Aging",
+                          "Mechanical Testing"]
             }
         ]
     },
