@@ -43,6 +43,16 @@
     "icon": "book-open",
     "iconType": "duotone"
   },
+  "tabs": [
+    {
+      "name": "Section 1",
+      "url": "part_1"
+    },
+    {
+      "name": "part_2",
+      "url": "part_2"
+    }
+  ],
   "navigation": [
     {
       "group": "Welcome",
@@ -65,7 +75,7 @@
     },
     {
       "group": "Interviews 101",
-      "pages": ["part_3/The_Interviewers_Mindset",
+      "pages": ["part_3/The_Interviewer's_Mindset",
                 "part_3/Big_Tech_vs._Start-up_Interviewing",
                 "part_3/Apple's_Interviewing_Process",
                 "part_3/Tesla_&_SpaceX_Interviewing Process",
@@ -154,5 +164,4 @@
   "default": "light",
   "isHidden": true
   }
-
 }
