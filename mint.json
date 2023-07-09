@@ -64,8 +64,7 @@
                 "part_1/Defining_your_Dream_Role",
                 "part_1/Company_Types_&_Stages",
                 "part_1/Where_to_Find_Opportunities",
-                "part_1/Cold_Emailing_Guide",
-                "part_1/Referrals_101"]
+                "part_1/Cold_Emailing_Guide"]
     },
     {
       "group": "Position Yourself for Success",
@@ -78,7 +77,7 @@
       "pages": ["part_3/The_Interviewer's_Mindset",
                 "part_3/Big_Tech_vs._Start-up_Interviewing",
                 "part_3/Apple's_Interviewing_Process",
-                "part_3/Tesla_&_SpaceX_Interviewing Process",
+                "part_3/Tesla_&_SpaceX_Interviewing_Process",
                 "part_3/Design Challenges (? Maybe Include"
         ]
     },
@@ -118,7 +117,7 @@
                           "part_5/Advanced_Injection_Molding",
                           "part_5/Injection_Molding_Part_Defects",
                           "part_5/CNC_Machining_Guide",
-                          "part_5/Die-Casting",
+                          "part_5/Die_Casting_Guide",
                           "part_5/Compression_Molding_Guide",
                           "part_5/Die_Cutting_Guide",
                           "part_5/GD&T_and_Tolerance_Guide",
