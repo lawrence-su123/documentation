@@ -43,16 +43,6 @@
     "icon": "book-open",
     "iconType": "duotone"
   },
-  "tabs": [
-    {
-      "name": "Section 1",
-      "url": "part_1"
-    },
-    {
-      "name": "part_2",
-      "url": "part_2"
-    }
-  ],
   "navigation": [
     {
       "group": "Welcome",
@@ -123,13 +113,6 @@
                           "part_5/GD&T_and_Tolerance_Guide",
                           "part_5/Color,_Material,_Finish_(CMF)",
                           "part_5/3D_Printing_Methods"]
-            },
-            {
-                "group": "Reliability & Test",
-                "pages": ["Reliability",
-                          "Failure Analysis",
-                          "Plastic Composition & Aging",
-                          "Mechanical Testing"]
             }
         ]
     },
@@ -137,19 +120,6 @@
       "group": "Hardware Cheatsheets",
       "pages": [
         "Cheatsheet Quickstart Guide", "MechE Technical Interviewing Cheatsheet", "Manufacturing Methods Cheatsheet"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
       ]
     }
   ],
